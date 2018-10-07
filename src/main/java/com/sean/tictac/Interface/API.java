@@ -5,9 +5,9 @@ import com.sean.tictac.Interface.structs.Response;
 
 public interface API {
 
-    public Response makeMove(Request request);
+    public Response makeMove(String id, Request request);
 
-    public Response getBoardInfo();
+    public Response getBoardInfo(String id);
 
-    public Response resetBoard();
+    public Response resetBoard(String id);
 }
