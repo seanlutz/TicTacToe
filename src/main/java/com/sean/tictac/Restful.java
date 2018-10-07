@@ -28,21 +28,21 @@ public class Restful implements API {
 
     @PostMapping("/game/{id}/move")
     public Response makeMove(@PathVariable("id") String id, @RequestBody Request request) {
-        HashMap<Space, Player> map = new HashMap<Space, Player>();
-        map.put(request.space, request.player);
-        return new Response(map, RequestStatus.SUCCESS, null, id);
+        Game game = boardGetter.getGame(id);
+        Response resp = game.makeMove(request.player, request.space);
+		return resp;
     }
     @GetMapping("/game/{id}/info")
     public Response getBoardInfo(@PathVariable("id") String id) {
-        HashMap<Space, Player> map = new HashMap<Space, Player>();
-        map.put(Space.A, Player.X);
-        return new Response(map, RequestStatus.SUCCESS, null, id);
+        Game game = boardGetter.getGame(id);
+        Response resp = game.getBoardInfo();
+		return resp;
     }
     @PostMapping("/game/{id}/reset")
     public Response resetBoard(@PathVariable("id") String id) {
         Game game = boardGetter.getGame(id);
         Response resp = game.resetBoard();
-		return null;
+		return resp;
     }
     @GetMapping("/")
     public String hi() {

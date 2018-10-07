@@ -11,6 +11,9 @@ import com.sean.tictac.Interface.structs.BoardStatus;
 import com.sean.tictac.Interface.structs.Player;
 import com.sean.tictac.Interface.structs.Space;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class TheBoard implements Board {
     Map<Space,Player> moves; 
     BoardStatus status;
@@ -55,9 +58,9 @@ public class TheBoard implements Board {
             remainingMoves.remove(space);
             status = checkWinner(status);
             switch(status){
-                case TURNX: status=BoardStatus.TURNO;
-                case TURNO: status=BoardStatus.TURNX;
-                default:;
+                case TURNX: status=BoardStatus.TURNO; break;
+                case TURNO: status=BoardStatus.TURNX; break;
+                default: break;
             }
             return true;
         }

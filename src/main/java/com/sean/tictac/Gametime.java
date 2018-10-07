@@ -3,13 +3,14 @@ package com.sean.tictac;
 import com.sean.tictac.Interface.Board;
 import com.sean.tictac.Interface.Game;
 import com.sean.tictac.Interface.structs.Player;
-import com.sean.tictac.Interface.structs.Request;
 import com.sean.tictac.Interface.structs.RequestStatus;
 import com.sean.tictac.Interface.structs.Response;
 import com.sean.tictac.Interface.structs.Space;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Gametime implements Game {
 
     @Autowired
