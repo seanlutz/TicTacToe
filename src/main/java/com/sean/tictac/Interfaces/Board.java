@@ -1,11 +1,11 @@
-package com.sean.tictac.Interface;
+package com.sean.tictac.Interfaces;
 
 import java.util.Map;
 import java.util.Set;
 
-import com.sean.tictac.Interface.structs.BoardStatus;
-import com.sean.tictac.Interface.structs.Player;
-import com.sean.tictac.Interface.structs.Space;
+import com.sean.tictac.Interfaces.structs.BoardStatus;
+import com.sean.tictac.Interfaces.structs.Player;
+import com.sean.tictac.Interfaces.structs.Space;
 
 
 public interface Board {

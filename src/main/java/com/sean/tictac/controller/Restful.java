@@ -1,10 +1,10 @@
-package com.sean.tictac;
+package com.sean.tictac.controller;
 
-import com.sean.tictac.Interface.API;
-import com.sean.tictac.Interface.BoardGetter;
-import com.sean.tictac.Interface.Game;
-import com.sean.tictac.Interface.structs.Request;
-import com.sean.tictac.Interface.structs.Response;
+import com.sean.tictac.Interfaces.API;
+import com.sean.tictac.Interfaces.BoardGetter;
+import com.sean.tictac.Interfaces.Game;
+import com.sean.tictac.Interfaces.structs.Request;
+import com.sean.tictac.Interfaces.structs.Response;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+// not used because switched to pure java swing based front end. uncomment line below for rest server
+// @RestController
 public class Restful implements API {
 
     @Autowired
@@ -27,7 +28,7 @@ public class Restful implements API {
 		return resp;
     }
 
-    @GetMapping("/game/{id}/info")
+
     public Response getBoardInfo(@PathVariable("id") String id) {
         Game game = boardGetter.getGame(id);
         Response resp = game.getBoardInfo();

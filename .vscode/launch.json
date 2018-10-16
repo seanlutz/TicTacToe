@@ -9,6 +9,16 @@
             "mainClass": "com.sean.tictac.DemoApplication",
             "projectName": "tic-tac",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TicTacApplication<tic-tac>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.sean.tictac.TicTacApplication",
+            "projectName": "tic-tac",
+            "args": ""
         }
     ]
 }

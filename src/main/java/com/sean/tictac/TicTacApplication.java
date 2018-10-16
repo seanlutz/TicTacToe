@@ -1,12 +1,16 @@
 package com.sean.tictac;
 
-import org.springframework.boot.SpringApplication;
+import com.sean.tictac.view.View;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class TicTacApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TicTacApplication.class, args);
+		ConfigurableApplicationContext context = new SpringApplicationBuilder(TicTacApplication.class).headless(false).run(args);
+		context.getBean(View.class);
 	}
 }

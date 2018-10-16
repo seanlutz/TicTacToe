@@ -1,7 +1,7 @@
-package com.sean.tictac;
+package com.sean.tictac.controller;
 
-import com.sean.tictac.Interface.BoardGetter;
-import com.sean.tictac.Interface.Game;
+import com.sean.tictac.Interfaces.BoardGetter;
+import com.sean.tictac.Interfaces.Game;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

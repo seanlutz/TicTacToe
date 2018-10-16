@@ -1,4 +1,4 @@
-package com.sean.tictac.Interface;
+package com.sean.tictac.Interfaces;
 
 public interface BoardGetter {
     public Game getGame(String id);

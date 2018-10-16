@@ -1,7 +1,7 @@
-package com.sean.tictac.Interface;
+package com.sean.tictac.Interfaces;
 
-import com.sean.tictac.Interface.structs.Request;
-import com.sean.tictac.Interface.structs.Response;
+import com.sean.tictac.Interfaces.structs.Request;
+import com.sean.tictac.Interfaces.structs.Response;
 
 public interface API {
 

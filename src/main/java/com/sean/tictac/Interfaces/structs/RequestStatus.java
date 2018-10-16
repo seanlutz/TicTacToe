@@ -1,10 +1,9 @@
-package com.sean.tictac.Interface.structs;
+package com.sean.tictac.Interfaces.structs;
 
 public enum RequestStatus {
-    SUCCESS,
+    CONTINUE,
     WRONGTURN,
     INVALIDMOVE,
     GAMEOVER,
-    CONTINUE,
     OTHER
 }

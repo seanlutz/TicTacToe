@@ -1,4 +1,4 @@
-package com.sean.tictac;
+package com.sean.tictac.model;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,10 +6,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import com.sean.tictac.Interface.Board;
-import com.sean.tictac.Interface.structs.BoardStatus;
-import com.sean.tictac.Interface.structs.Player;
-import com.sean.tictac.Interface.structs.Space;
+import com.sean.tictac.Interfaces.Board;
+import com.sean.tictac.Interfaces.structs.BoardStatus;
+import com.sean.tictac.Interfaces.structs.Player;
+import com.sean.tictac.Interfaces.structs.Space;
 
 import org.springframework.stereotype.Component;
 

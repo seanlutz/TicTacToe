@@ -1,11 +1,11 @@
-package com.sean.tictac;
+package com.sean.tictac.model;
 
-import com.sean.tictac.Interface.Board;
-import com.sean.tictac.Interface.Game;
-import com.sean.tictac.Interface.structs.Player;
-import com.sean.tictac.Interface.structs.RequestStatus;
-import com.sean.tictac.Interface.structs.Response;
-import com.sean.tictac.Interface.structs.Space;
+import com.sean.tictac.Interfaces.Board;
+import com.sean.tictac.Interfaces.Game;
+import com.sean.tictac.Interfaces.structs.Player;
+import com.sean.tictac.Interfaces.structs.RequestStatus;
+import com.sean.tictac.Interfaces.structs.Response;
+import com.sean.tictac.Interfaces.structs.Space;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

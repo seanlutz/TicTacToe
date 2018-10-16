@@ -1,4 +1,4 @@
-package com.sean.tictac.Interface.structs;
+package com.sean.tictac.Interfaces.structs;
 
 import java.util.Map;
 

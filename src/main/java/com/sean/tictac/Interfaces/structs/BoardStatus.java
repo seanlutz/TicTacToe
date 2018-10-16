@@ -1,4 +1,4 @@
-package com.sean.tictac.Interface.structs;
+package com.sean.tictac.Interfaces.structs;
 
 public enum BoardStatus {
     WINX(Player.X, true),
@@ -11,5 +11,12 @@ public enum BoardStatus {
     BoardStatus(Player player, Boolean isOver) {
         this.player = player;
         this.isOver = isOver;
+    }
+    public BoardStatus swapTurns(){
+        switch(this){
+            case TURNX: return TURNO;
+            case TURNO: return TURNX;
+            default: return null;
+        }
     }
 }
